@@ -134,7 +134,7 @@ The following steps were employed to obtain the required results:
 
 </br>
 
-## 5.9. Results
+## 6.Results
 
 With the removal of users with very less amount of games played, the RMSE decreases considerably.
 
@@ -146,13 +146,13 @@ Thus the performance of Ranking Factorization Recommender increases considerably
 
 </br>
 
-## 5.10 Limitations
+## 7.Limitations
 
 The model performances could have been further improved if the actual ratings provided by users were available.
 
 </br>
 
-## 5.11 Conclusion
+## 8.Conclusion
 
 Using Google Collab, the dataset stored in google drive was loaded. Pre-processing steps were carried out and using Turicreate library, 3 recommender systems were built. Dividing the data into training set and testing set, the performance of these systems were compared.
 
