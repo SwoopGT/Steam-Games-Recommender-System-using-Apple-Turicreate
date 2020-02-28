@@ -79,58 +79,58 @@ The following steps were employed to obtain the required results:
 
 </br>
 
-> ### 5.6 Creation of SFrame
+> #### 5.5.1 Creation of SFrame
 > The use of Turicreate library requires a SFrame which is created from the original dataframe.
 
 </br>
 
-> ### 5.7 Building the Recommender Systems
+> #### 5.5.2 Building the Recommender Systems
 
->> 1. Factorization Recommender – Observed ratings are modeled as a weighted combination of terms, where weights are learned from data. 
+> 1. Factorization Recommender – Observed ratings are modeled as a weighted combination of terms, where weights are learned from data. 
 
->> 2. Ranking Factorization Recommender – Recommends items that are both similar to items in a user’s dataset and if rating is given, which item would be rated highly by the user.
+> 2. Ranking Factorization Recommender – Recommends items that are both similar to items in a user’s dataset and if rating is given, which item would be rated highly by the user.
 
->>3. Item Similarity Recommender – Computes the similarity between each pair of items and recommends items to each user that are closest to items they have already used and liked. [2]
+> 3. Item Similarity Recommender – Computes the similarity between each pair of items and recommends items to each user that are closest to items they have already used and liked.
 
 </br>
 
-> ### 5.8 Display the results
+> #### 5.5.3 Display the results
 > The recommendations for the top 5 users are obtained and compared in the Result section.
 
 </br>
 
-> ### 5.9 Reduction of Dataset
+> ### 5.6 Reduction of Dataset
 > The dataset is optimized by removal of all the users with less than 5 games in their steam library.
 
 </br>
 
-> ### 5.10 Recommendation Systems – Testing and Evaluation
+> ### 5.7 Recommendation Systems – Testing and Evaluation
 > This step involves the following steps:
 
 </br>
 
->> #### 5.10.1 Convert into SFrame
-The optimized dataset is again converted in to a SFrame.
+> #### 5.7.1 Convert into SFrame
+> The optimized dataset is again converted in to a SFrame.
 
 </br>
 
->> #### 5.10.1 Splitting the optimized dataset into Train and Test set
-Obtained SFrame is split into a Training set and a Test set.
+> #### 5.7.2 Splitting the optimized dataset into Train and Test set
+> Obtained SFrame is split into a Training set and a Test set.
 
 </br>
 
->> #### 5.10.2 Training and Evaluation
-The model is trained on the training set for all the three recommender systems and then model performance is evaluated on the testing set using RMSE as a metric.
+> #### 5.7.3 Training and Evaluation
+> The model is trained on the training set for all the three recommender systems and then model performance is evaluated on the testing set using RMSE as a metric.
 
 </br>
 
->> #### 5.10.3 Comparison of improvement in model performance
-The results obtained from this step are presented in the result section where the performance of the models are compared.
+> #### 5.7.4 Comparison of improvement in model performance
+> The results obtained from this step are presented in the result section where the performance of the models are compared.
 
 </br>
 
->> #### 5.10.4 Metrics for Evaluation
-The following metrics were used for evaluation: RMSE
+> ### 5.8. Metrics for Evaluation
+> The following metrics were used for evaluation: RMSE
 
 </br>
 
