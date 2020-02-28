@@ -134,3 +134,28 @@ The following steps were employed to obtain the required results:
 
 </br>
 
+## 5.9. Results
+
+With the removal of users with very less amount of games played, the RMSE decreases considerably.
+
+For Factorization Recommender the percentage decrease is 8.2 percent.
+For Ranking Factorization Recommender the percentage decrease is 34.82 percent.
+For Item Similarity Recommender the percentage decrease is 19.64 percent.
+
+Thus the performance of Ranking Factorization Recommender increases considerably by the removal of redundant information.
+
+</br>
+
+## 5.10 Limitations
+
+The model performances could have been further improved if the actual ratings provided by users were available.
+
+</br>
+
+## 5.11 Conclusion
+
+Using Google Collab, the dataset stored in google drive was loaded. Pre-processing steps were carried out and using Turicreate library, 3 recommender systems were built. Dividing the data into training set and testing set, the performance of these systems were compared.
+
+The dataset was further optimized and the process was repeated. The evaluated model performances were compared for unoptimized and optimized models. RMSE score improves with the removal of users with less than 5 games played.
+
+</br>
