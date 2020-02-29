@@ -100,12 +100,12 @@ The recommendations for the top 5 users are obtained and compared in the Result 
 </br>
 
 #### 5.6 Reduction of Dataset
-> The dataset is optimized by removal of all the users with less than 5 games in their steam library.
+The dataset is optimized by removal of all the users with less than 5 games in their steam library.
 
 </br>
 
 #### 5.7 Recommendation Systems – Testing and Evaluation
-> This step involves the following steps:
+This step involves the following steps:
 
 </br>
 
