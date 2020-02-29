@@ -2,7 +2,7 @@
 
 ## 1.Introduction
 
-Steam is a video game digital distribution service provided by Valve. It is the largest platform in the video game distribution genre by player base.
+Steam is a video game digital distribution service provided by Valve. It is the largest platform in the video game distribution genre by player base.[1]
 
 Users of steam can download games digitally in to their profile library. Games can be purchased and gifted between users and these games stay until deleted by the user himself. 
 
@@ -90,7 +90,7 @@ The following steps were employed to obtain the required results:
 
 >> 2. Ranking Factorization Recommender – Recommends items that are both similar to items in a user’s dataset and if rating is given, which item would be rated highly by the user.
 
->> 3. Item Similarity Recommender – Computes the similarity between each pair of items and recommends items to each user that are closest to items they have already used and liked.
+>> 3. Item Similarity Recommender – Computes the similarity between each pair of items and recommends items to each user that are closest to items they have already used and liked.[2]
 
 </br>
 
@@ -157,5 +157,12 @@ The model performances could have been further improved if the actual ratings pr
 Using Google Collab, the dataset stored in google drive was loaded. Pre-processing steps were carried out and using Turicreate library, 3 recommender systems were built. Dividing the data into training set and testing set, the performance of these systems were compared.
 
 The dataset was further optimized and the process was repeated. The evaluated model performances were compared for unoptimized and optimized models. RMSE score improves with the removal of users with less than 5 games played.
+
+</br>
+
+## 9. References
+
+Steam, “Steam (Service),” [Online]. Available: https://en.wikipedia.org/wiki/Steam_(service)
+Apple, “Turicreate,” [Online]. Available: https://apple.github.io/turicreate/docs/userguide/recommender/choosing-a-model.html
 
 </br>
