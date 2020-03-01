@@ -4,13 +4,13 @@
 
 Steam is a video game digital distribution service provided by Valve. It is the largest platform in the video game distribution genre by player base.[1]
 
-Users of steam can download games digitally in to their profile library. Games can be purchased and gifted between users and these games stay until deleted by the user himself. 
+Users of Steam can download games digitally into their profile library. Games can be purchased and gifted between users and these games stay until deleted by the user himself.
 
-The Kaggle completion involving dataset for steam users and the games in their libraries was used for the analysis. Further information provided was the amount of hours a particular user has played the game. The aim of the analysis was to build a recommender system which could accurately suggest games to other users which they haven’t played yet. 
+Kaggle completion involving datasets for steam users and the games in their libraries was used for the analysis. Further information provided was the number of hours a particular user has played the game. The aim of the analysis was to build a recommender system which could accurately suggest games to other users which they haven’t played yet.
 
 </br>
 
-## 2.Business Problem 
+## 2.Business Problem
 
 The main question is- depending upon the number of games purchased by the users and the amount of time in hours spent in playing the games, what different games can be suggested to different users using a recommender system?
 This report aims to put forward an analysis of building a recommender system to recommend games to users with similar interests.
@@ -25,7 +25,7 @@ The target audience in this scenario are the people – gamers, who would like t
 
 ## 4.Data required
 
-The data required to build a model to predict the customer satisfaction is as follows:
+The data required to build a model to predict customer satisfaction is as follows:
 User Data: Data pertaining to the users and games played is provided by the Kaggle user for analysis.
 
 </br>
@@ -37,14 +37,14 @@ The following steps were employed to obtain the required results:
 
 #### 5.1 Importing Necessary Libraries
 
-The first step is to import the necessary libraries and packages. 
+The first step is to import the necessary libraries and packages.
 Numpy – For numerical calculations
 Pandas – Data manipulation
 Turicreate – Machine Learning library for Recommender Systems
 
 </br>
 
-#### 5.2 Google Drive Pre- requisites
+#### 5.2 Google Drive Pre - Requisites
 
 This step involves the authentication steps taken in order to use the dataset stored in Google Drive which can be directly loaded into Google Colab.
 
@@ -56,8 +56,8 @@ The following preprocessing steps were employed:
 1. Checking the shape of the dataset
 2. Checking the data types of the columns (features) present in the dataset
 3. Removal of unwanted columns
-4. Getting statistical information of the dataset
-5. Displaying brief information of the dataset
+4. Getting statistical information from the dataset
+5. Displaying brief information on the dataset
 6. Creating a new dataframe as per requirement by merging
 
 </br>
@@ -72,9 +72,9 @@ This ranking system will be used as a rating system by grouping the dataset by u
 
 #### 5.5 Recommender Systems – User Recommendations
 
-Using the Turicreate library provided by Apple, the following three recommender systems were built: 
+Using the Turicreate library provided by Apple, the following three recommender systems were built:
 1. Factorization Recommender
-2. Ranking Factorization 
+2. Ranking Factorization
 3. Item Similarity Recommender
 
 </br>
@@ -84,9 +84,9 @@ The use of Turicreate library requires a SFrame which is created from the origin
 
 </br>
 
-##### 5.5.2 Building the Recommender Systems
+##### 5.5.2 Building of Recommender Systems
 
-1. Factorization Recommender – Observed ratings are modeled as a weighted combination of terms, where weights are learned from data. 
+1. Factorization Recommender – Observed ratings are modeled as a weighted combination of terms, where weights are learned from data.
 
 2. Ranking Factorization Recommender – Recommends items that are both similar to items in a user’s dataset and if rating is given, which item would be rated highly by the user.
 
@@ -95,7 +95,7 @@ The use of Turicreate library requires a SFrame which is created from the origin
 </br>
 
 ##### 5.5.3 Display the results
-The recommendations for the top 5 users are obtained and compared in the Result section.
+The recommendations for the top 5 users were obtained and compared in the Results section.
 
 </br>
 
@@ -110,7 +110,7 @@ This step involves the following steps:
 </br>
 
 ##### 5.7.1 Convert into SFrame
-The optimized dataset is again converted in to a SFrame.
+The optimized dataset is converted to a SFrame.
 
 </br>
 
@@ -138,9 +138,9 @@ The following metrics were used for evaluation: RMSE
 
 With the removal of users with very less amount of games played, the RMSE decreases considerably.
 
-For Factorization Recommender the percentage decrease is 8.2 percent.
-For Ranking Factorization Recommender the percentage decrease is 34.82 percent.
-For Item Similarity Recommender the percentage decrease is 19.64 percent.
+For the Factorization Recommender, the percentage decrease was 8.2 percent.
+For the Ranking Factorization Recommender, the percentage decrease was 34.82 percent.
+For the Item Similarity Recommender, the percentage decrease was 19.64 percent.
 
 Thus the performance of Ranking Factorization Recommender increases considerably by the removal of redundant information.
 
@@ -148,21 +148,21 @@ Thus the performance of Ranking Factorization Recommender increases considerably
 
 ## 7.Limitations
 
-The model performances could have been further improved if the actual ratings provided by users were available.
+The model's performance could have been further improved if the actual ratings provided by users were available.
 
 </br>
 
 ## 8.Conclusion
 
-Using Google Collab, the dataset stored in google drive was loaded. Pre-processing steps were carried out and using Turicreate library, 3 recommender systems were built. Dividing the data into training set and testing set, the performance of these systems were compared.
+Using Google Collab, the dataset stored in Google Drive was loaded. Pre-processing steps were carried out and using the Turicreate library, 3 recommender systems were built. Dividing the data into the training set and testing set, the performance of these systems were compared.
 
-The dataset was further optimized and the process was repeated. The evaluated model performances were compared for unoptimized and optimized models. RMSE score improves with the removal of users with less than 5 games played.
+The dataset was further optimized and the process was repeated. The evaluated model performances were compared for unoptimized and optimized models. The RMSE score improves with the removal of users with less than 5 games played.
 
 </br>
 
 ## 9. References
 
-Steam, “Steam (Service),” [Online]. Available: https://en.wikipedia.org/wiki/Steam_(service)
-Apple, “Turicreate,” [Online]. Available: https://apple.github.io/turicreate/docs/userguide/recommender/choosing-a-model.html
+Steam, “Steam (Service),” [Online]. Available at: https://en.wikipedia.org/wiki/Steam_(service)
+Apple, “Turicreate,” [Online]. Available at: https://apple.github.io/turicreate/docs/userguide/recommender/choosing-a-model.html
 
 </br>
